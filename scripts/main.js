@@ -14,8 +14,8 @@ const weather1 = extendContent(Weather, "electric-storm", {
 			Tmp.r1.setCentered(Core.camera.position.x, Core.camera.position.y, Core.graphics.getWidth() / Vars.renderer.minScale(), Core.graphics.getHeight() / Vars.renderer.minScale());
 			Tmp.r1.grow(padding);
 			Core.camera.bounds(Tmp.r2);
-			var total = Tmp.r1.area() / density * state.intensity();
-			for(i = 0; i < total; i++){
+			var total = Tmp.r1.area() / density * state.intensity;
+			for(var i = 0; i < total; i++){
 				var scl = rand.random(0.5, 1);
 				var scl2 = rand.random(0.5, 1);
 				var sscl = rand.random(0.2, 1);
